@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest of Two Numbers</title>
+</head>
+<body>
+    <h1>Largest of Two Numbers</h1>
+    <p>This program finds the largest of two numbers.</p>
+    <h3 id="output"></h3>
+
+<script>
+function largestNumber() {
+    let a = Number(prompt("Enter first number:"));
+    let b = Number(prompt("Enter second number:"));
+    let largest = (a > b) ? a : b;
+    document.getElementById("output").innerText =
+        "Largest number is: " + largest;
+}
+largestNumber();
+</script>
+</body>
+</html>

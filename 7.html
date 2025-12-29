@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leap Year</title>
+</head>
+<body>
+    <h1>Leap Year Checker</h1>
+    <p>This program checks whether a year is leap year.</p>
+    <h3 id="output"></h3>
+
+<script>
+function leapYear() {
+    let year = Number(prompt("Enter year:"));
+    let result =
+        (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0
+        ? "Leap Year" : "Not a Leap Year";
+
+    document.getElementById("output").innerText = result;
+}
+leapYear();
+</script>
+</body>
+</html>

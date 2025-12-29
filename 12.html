@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign of Product</title>
+</head>
+<body>
+    <h1>Sign of Product of Three Numbers</h1>
+    <p>
+        This program finds the sign of the product of three numbers.
+    </p>
+
+    <h3 id="output"></h3>
+
+<script>
+function signOfProduct() {
+    let a = Number(prompt("Enter first number:"));
+    let b = Number(prompt("Enter second number:"));
+    let c = Number(prompt("Enter third number:"));
+
+    let product = a * b * c;
+    let sign = product >= 0 ? "+" : "-";
+
+    document.getElementById("output").innerText =
+        "The sign is: " + sign;
+}
+signOfProduct();
+</script>
+</body>
+</html>

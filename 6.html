@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Price</title>
+</head>
+<body>
+    <h1>Ticket Price Calculator</h1>
+    <p>This program calculates ticket price based on age.</p>
+    <h3 id="output"></h3>
+
+<script>
+function ticketPrice() {
+    let age = Number(prompt("Enter age:"));
+    let price;
+
+    if (age < 12) price = 5;
+    else if (age < 18) price = 10;
+    else if (age < 60) price = 20;
+    else price = 15;
+
+    document.getElementById("output").innerText =
+        "Ticket Price: ₹" + price;
+}
+ticketPrice();
+</script>
+</body>
+</html>

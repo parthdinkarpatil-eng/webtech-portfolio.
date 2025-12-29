@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Even or Odd Program</title>
+</head>
+<body>
+    <h1>Even or Odd Number</h1>
+    <p>This program checks whether a number is even or odd.</p>
+    <h3 id="output"></h3>
+
+<script>
+function checkEvenOdd() {
+    let num = Number(prompt("Enter a number:"));
+    let result = (num % 2 === 0) ? "Even Number" : "Odd Number";
+    document.getElementById("output").innerText = num + " is " + result;
+}
+checkEvenOdd();
+</script>
+</body>
+</html>

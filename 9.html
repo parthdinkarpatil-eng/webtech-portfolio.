@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Program</title>
+</head>
+<body>
+    <h1>Greeting Based on Time</h1>
+    <p>This program greets user according to time.</p>
+    <h3 id="output"></h3>
+
+<script>
+function greeting() {
+    let hour = Number(prompt("Enter hour (0-23):"));
+    let msg =
+        hour < 12 ? "Good Morning" :
+        hour < 18 ? "Good Afternoon" :
+        "Good Evening";
+
+    document.getElementById("output").innerText = msg;
+}
+greeting();
+</script>
+</body>
+</html>

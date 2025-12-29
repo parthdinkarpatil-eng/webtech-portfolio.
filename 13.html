@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Three Numbers</title>
+</head>
+<body>
+    <h1>Sort Three Numbers</h1>
+    <p>
+        This program sorts three numbers in descending order.
+    </p>
+
+    <h3 id="output"></h3>
+
+<script>
+function sortThreeNumbers() {
+    let a = Number(prompt("Enter first number:"));
+    let b = Number(prompt("Enter second number:"));
+    let c = Number(prompt("Enter third number:"));
+
+    let numbers = [a, b, c];
+    numbers.sort(function(x, y) {
+        return y - x;
+    });
+
+    document.getElementById("output").innerText =
+        "Sorted Order: " + numbers.join(", ");
+}
+sortThreeNumbers();
+</script>
+</body>
+</html>

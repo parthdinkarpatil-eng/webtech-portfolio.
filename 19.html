@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Iteration</title>
+</head>
+<body>
+    <h1>Object Property Iteration using for...in</h1>
+    <p>
+        This program iterates through object properties
+        using the <b>for...in</b> loop.
+    </p>
+
+    <p id="output"></p>
+
+<script>
+function objectIteration() {
+    let student = {
+        name: "Ansh Tiwari",
+        course: "B.Tech (IBM)",
+        year: "1st Year",
+        subject: "Web Technology"
+    };
+
+    let text = "";
+
+    for (let key in student) {
+        text += key + " : " + student[key] + "<br>";
+    }
+
+    document.getElementById("output").innerHTML = text;
+}
+objectIteration();
+</script>
+</body>
+</html>

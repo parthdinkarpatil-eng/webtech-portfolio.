@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Type</title>
+</head>
+<body>
+    <h1>Number Type Checker</h1>
+    <p>This program checks number type using ternary operator.</p>
+    <h3 id="output"></h3>
+
+<script>
+function numberType() {
+    let num = Number(prompt("Enter a number:"));
+    let type = num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero";
+    document.getElementById("output").innerText =
+        num + " is " + type;
+}
+numberType();
+</script>
+</body>
+</html>

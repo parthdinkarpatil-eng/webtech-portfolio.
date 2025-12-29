@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+    <p>This program converts marks into grade.</p>
+    <h3 id="output"></h3>
+
+<script>
+function gradeCalculator() {
+    let marks = Number(prompt("Enter marks (0-100):"));
+    let grade;
+
+    if (marks >= 90) grade = "A";
+    else if (marks >= 75) grade = "B";
+    else if (marks >= 60) grade = "C";
+    else if (marks >= 40) grade = "D";
+    else grade = "F";
+
+    document.getElementById("output").innerText =
+        "Grade obtained: " + grade;
+}
+gradeCalculator();
+</script>
+</body>
+</html>

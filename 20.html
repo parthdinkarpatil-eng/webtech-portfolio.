@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Armstrong Number</title>
+</head>
+<body>
+    <h1>3-Digit Armstrong Number</h1>
+    <p>
+        This program checks whether a given 3-digit number
+        is an <b>Armstrong Number</b>.
+    </p>
+
+    <h3 id="output"></h3>
+
+<script>
+function armstrongNumber() {
+    let num = Number(prompt("Enter a 3-digit number:"));
+    let temp = num;
+    let sum = 0;
+
+    while (temp > 0) {
+        let digit = temp % 10;
+        sum += digit * digit * digit;
+        temp = Math.floor(temp / 10);
+    }
+
+    let result = (sum === num)
+        ? num + " is an Armstrong Number"
+        : num + " is NOT an Armstrong Number";
+
+    document.getElementById("output").innerText = result;
+}
+armstrongNumber();
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Numbers</title>
+</head>
+<body>
+    <h1>Print Numbers from 1 to 10</h1>
+    <p>
+        This program prints numbers from 1 to 10 using a for loop.
+    </p>
+
+    <h3 id="output"></h3>
+
+<script>
+function printNumbers() {
+    let text = "";
+
+    for (let i = 1; i <= 10; i++) {
+        text += i + " ";
+    }
+
+    document.getElementById("output").innerText = text;
+}
+printNumbers();
+</script>
+</body>
+</html>

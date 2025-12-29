@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FizzBuzz Program</title>
+</head>
+<body>
+    <h1>FizzBuzz Program</h1>
+    <p>
+        This program prints numbers from 1 to 100.
+        Multiples of 3 print "Fizz", multiples of 5 print "Buzz",
+        and multiples of both print "FizzBuzz".
+    </p>
+
+    <p id="output"></p>
+
+<script>
+function fizzBuzz() {
+    let result = "";
+
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0)
+            result += "FizzBuzz<br>";
+        else if (i % 3 === 0)
+            result += "Fizz<br>";
+        else if (i % 5 === 0)
+            result += "Buzz<br>";
+        else
+            result += i + "<br>";
+    }
+
+    document.getElementById("output").innerHTML = result;
+}
+fizzBuzz();
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial Program</title>
+</head>
+<body>
+    <h1>Factorial of a Number</h1>
+    <p>
+        This program calculates the factorial of a number
+        using a <b>for loop</b>.
+    </p>
+
+    <h3 id="output"></h3>
+
+<script>
+function factorial() {
+    let num = Number(prompt("Enter a number:"));
+    let fact = 1;
+
+    for (let i = 1; i <= num; i++) {
+        fact *= i;
+    }
+
+    document.getElementById("output").innerText =
+        "Factorial of " + num + " is: " + fact;
+}
+factorial();
+</script>
+</body>
+</html>

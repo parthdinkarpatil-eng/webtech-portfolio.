@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Iteration</title>
+</head>
+<body>
+    <h1>Array Iteration using for...of</h1>
+    <p>
+        This program iterates through an array of strings
+        using the <b>for...of</b> loop.
+    </p>
+
+    <p id="output"></p>
+
+<script>
+function arrayIteration() {
+    let fruits = ["Apple", "Banana", "Mango", "Orange"];
+    let text = "";
+
+    for (let fruit of fruits) {
+        text += fruit + "<br>";
+    }
+
+    document.getElementById("output").innerHTML = text;
+}
+arrayIteration();
+</script>
+</body>
+</html>

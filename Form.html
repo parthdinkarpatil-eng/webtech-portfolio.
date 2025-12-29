@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Form</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(120deg,#89f7fe,#66a6ff);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.form-box{
+    background:#ffffff;
+    width:420px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.form-box h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#333;
+}
+
+.form-box p{
+    text-align:center;
+    font-size:14px;
+    color:#666;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:600;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+input:focus, select:focus{
+    outline:none;
+    border-color:#66a6ff;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:#66a6ff;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#4a90e2;
+}
+
+footer{
+    text-align:center;
+    margin-top:15px;
+    font-size:13px;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+    <h1>Student Form</h1>
+    <p>B.Tech (IBM) – Web Technology</p>
+
+    <form>
+        <label>Student Name</label>
+        <input type="text" placeholder="Enter name">
+
+        <label>Roll Number</label>
+        <input type="number" placeholder="Enter roll number">
+
+        <label>Subject</label>
+        <select>
+            <option>Digital Electronics</option>
+            <option>Mathematics</option>
+            <option>Web Development</option>
+            <option>CP</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        Designed by <b>parth (IBM)</b>
+    </footer>
+</div>
+
+</body>
+</html>

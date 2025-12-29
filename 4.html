@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day of the Week</title>
+</head>
+<body>
+    <h1>Day of the Week</h1>
+    <p>This program displays day name using switch case.</p>
+    <h3 id="output"></h3>
+
+<script>
+function dayOfWeek() {
+    let day = Number(prompt("Enter day number (1-7):"));
+    let name;
+
+    switch(day) {
+        case 1: name="Monday"; break;
+        case 2: name="Tuesday"; break;
+        case 3: name="Wednesday"; break;
+        case 4: name="Thursday"; break;
+        case 5: name="Friday"; break;
+        case 6: name="Saturday"; break;
+        case 7: name="Sunday"; break;
+        default: name="Invalid Day";
+    }
+
+    document.getElementById("output").innerText = name;
+}
+dayOfWeek();
+</script>
+</body>
+</html>

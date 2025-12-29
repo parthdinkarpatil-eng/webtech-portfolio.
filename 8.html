@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discount Calculator</title>
+</head>
+<body>
+    <h1>Discount Calculator</h1>
+    <p>This program calculates discount based on amount.</p>
+    <h3 id="output"></h3>
+
+<script>
+function discount() {
+    let amount = Number(prompt("Enter purchase amount:"));
+    let disc;
+
+    if (amount >= 100) disc = amount * 0.20;
+    else if (amount >= 50) disc = amount * 0.10;
+    else disc = 0;
+
+    document.getElementById("output").innerText =
+        "Discount: ₹" + disc;
+}
+discount();
+</script>
+</body>
+</html>

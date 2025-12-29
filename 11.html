@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <p>
+        This program compares a secret number with the user's guess
+        and provides hints whether the guess is higher, lower, or correct.
+    </p>
+
+    <h3 id="output"></h3>
+
+<script>
+function numberGuessingGame() {
+    let secretNumber = 7;
+    let guess = Number(prompt("Guess the secret number:"));
+
+    let message;
+    if (guess > secretNumber)
+        message = "Your guess is HIGHER than the secret number.";
+    else if (guess < secretNumber)
+        message = "Your guess is LOWER than the secret number.";
+    else
+        message = "🎉 Correct! You guessed the right number.";
+
+    document.getElementById("output").innerText = message;
+}
+numberGuessingGame();
+</script>
+</body>
+</html>

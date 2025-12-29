@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <p>This program calculates Body Mass Index.</p>
+    <h3 id="output"></h3>
+
+<script>
+function bmiCalculator() {
+    let weight = Number(prompt("Enter weight in kg:"));
+    let height = Number(prompt("Enter height in meters:"));
+    let bmi = weight / (height * height);
+    let result;
+
+    if (bmi < 18.5) result = "Underweight";
+    else if (bmi < 25) result = "Normal";
+    else if (bmi < 30) result = "Overweight";
+    else result = "Obese";
+
+    document.getElementById("output").innerText =
+        "BMI Category: " + result;
+}
+bmiCalculator();
+</script>
+</body>
+</html>
